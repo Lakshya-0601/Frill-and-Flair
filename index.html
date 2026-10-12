@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frill &amp; Flair — Handcrafted Suits &amp; Sarees</title>
+  <meta name="description" content="Frill & Flair is a boutique for handcrafted Indian traditional wear — sarees, suits, lehengas and custom stitching, made with love.">
+  <meta name="theme-color" content="#6e1423">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%236e1423'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23e3c98a' font-family='Georgia' font-style='italic'%3EF%3C/text%3E%3C/svg%3E">
+  <script>try{if(sessionStorage.getItem('ff-nav')){document.documentElement.classList.add('curtain-in');sessionStorage.removeItem('ff-nav')}}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reusable icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-paisley" viewBox="0 0 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+        <path d="M50 92C26 92 14 72 18 52 22 32 40 18 58 12 72 7 86 14 84 28 82 38 70 40 66 32 63 26 70 22 74 26"/>
+        <path d="M50 81C34 81 26 67 29 54 32 41 44 32 56 28"/>
+        <path d="M50 70C41 70 37 62 39 55 41 48 47 44 53 42"/>
+      </g>
+      <circle cx="50" cy="58" r="4" fill="currentColor"/>
+      <g fill="currentColor"><circle cx="20" cy="86" r="2.2"/><circle cx="82" cy="50" r="2.2"/><circle cx="76" cy="78" r="2.2"/></g>
+    </symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g>
+      <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></g>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__title"><span class="loader__word">Frill</span><span class="loader__word"><em>&amp;</em></span><span class="loader__word">Flair</span></div>
+      <div class="loader__deva">फ्रिल एंड फ्लेयर</div>
+      <div class="loader__bar"><span>THREADING</span><div class="loader__track"><div class="loader__thread"></div></div><span class="loader__count">0</span></div>
+    </div>
+  </div>
+  <div class="curtain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <header class="nav">
+    <a href="index.html" class="logo" aria-label="Frill and Flair home">
+      <svg><use href="#i-paisley"/></svg>Frill <em>&amp;</em> Flair
+    </a>
+    <ul class="nav__links">
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#next">Coming Next</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav__insta" data-insta-link href="#"><svg><use href="#i-insta"/></svg>Instagram</a>
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <nav class="menu" aria-label="Mobile">
+    <a href="#collection">Collection</a>
+    <a href="#next">Coming <em>Next</em></a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <div class="menu__foot"><a data-insta-link data-insta-text href="#" style="font-family:var(--sans);font-size:1rem">@frill_and_flair</a></div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO: the saree ============ -->
+    <section class="hero" id="top">
+      <h1 class="hero__title">
+        <span class="line"><span data-intro>Frill</span></span>
+        <span class="line"><span data-intro><em>&amp;</em> Flair</span></span>
+      </h1>
+      <canvas class="drape" data-layers="dupatta,saree" aria-hidden="true"></canvas>
+      <div class="hero__deva">फ्रिल एंड फ्लेयर · बुटीक</div>
+
+      <div class="hero__foot">
+        <div class="hero__intro">
+          <span class="eyebrow" data-intro-fade>Boutique · Handcrafted with love</span>
+          <p data-intro-fade>Sarees, suits and lehengas. Each one is cut, stitched and finished by hand, one drape at a time.</p>
+          <a href="#collection" class="btn btn--solid magnetic" data-intro-fade>See the collection <svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="scroll-cue" data-intro-fade>Scroll to unfold<span class="scroll-cue__line"></span></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__item">Sarees <svg><use href="#i-paisley"/></svg> Salwar Suits <svg><use href="#i-paisley"/></svg> Lehengas <svg><use href="#i-paisley"/></svg> Designer Blouses <svg><use href="#i-paisley"/></svg> Custom Stitching <svg><use href="#i-paisley"/></svg></div>
+        <div class="marquee__item">Sarees <svg><use href="#i-paisley"/></svg> Salwar Suits <svg><use href="#i-paisley"/></svg> Lehengas <svg><use href="#i-paisley"/></svg> Designer Blouses <svg><use href="#i-paisley"/></svg> Custom Stitching <svg><use href="#i-paisley"/></svg></div>
+      </div>
+    </div>
+
+    <!-- ============ STATEMENT ============ -->
+    <section class="statement">
+      <span class="eyebrow">The story in a stitch</span>
+      <p class="statement__text" data-scrub>Every outfit at Frill &amp; Flair begins as a length of fabric and a conversation. It leaves as something made <em>only for you,</em> with tradition in every pleat and a little <em>flair</em> in every frill.</p>
+      <div class="statement__meta" data-stagger>
+        <!-- ✏️ EDIT: change these numbers to real ones -->
+        <div><div class="stat__num">100%</div><div class="stat__label">Made to measure, stitched in-house</div></div>
+        <div><div class="stat__num">Hand</div><div class="stat__label">Finished embroidery, falls &amp; tassels</div></div>
+        <div><div class="stat__num">1:1</div><div class="stat__label">Personal fittings, every order</div></div>
+      </div>
+    </section>
+
+    <!-- ============ COLLECTION (horizontal scroll) ============ -->
+    <section class="collection" id="collection">
+      <div class="collection__pin">
+        <div class="collection__head">
+          <div>
+            <span class="eyebrow">What she has made</span>
+            <h2 class="display" data-split>The <em>Collection</em></h2>
+          </div>
+          <p data-reveal>A look at the pieces stitched so far. Each one is a one-off, and the newest work is always on Instagram first.</p>
+        </div>
+
+        <!-- ✏️ To show real photos: add <img src="images/your-photo.jpg" alt="..."> inside any .card__media -->
+        <div class="collection__track">
+          <article class="card" data-cursor="View">
+            <a data-insta-link href="#">
+              <div class="card__media fabric--saree"><span class="card__num">01</span><svg class="card__motif"><use href="#i-paisley"/></svg></div>
+              <div class="card__body">
+                <h3 class="card__title">Sarees</h3>
+                <p class="card__text">Silk, georgette and chiffon drapes, finished with hand-done falls, pico and tassels.</p>
+                <div class="card__tags"><span>Silk</span><span>Festive</span><span>Party wear</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="card" data-cursor="View">
+            <a data-insta-link href="#">
+              <div class="card__media fabric--suit"><span class="card__num">02</span><svg class="card__motif"><use href="#i-paisley"/></svg></div>
+              <div class="card__body">
+                <h3 class="card__title">Suits</h3>
+                <p class="card__text">Salwar, palazzo and sharara sets, cut to your exact measurements.</p>
+                <div class="card__tags"><span>Anarkali</span><span>Sharara</span><span>Everyday</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="card" data-cursor="View">
+            <a data-insta-link href="#">
+              <div class="card__media fabric--lehenga"><span class="card__num">03</span><svg class="card__motif"><use href="#i-paisley"/></svg></div>
+              <div class="card__body">
+                <h3 class="card__title">Lehengas</h3>
+                <p class="card__text">Festive and bridal lehengas with a flare that moves when you do.</p>
+                <div class="card__tags"><span>Bridal</span><span>Sangeet</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="card" data-cursor="View">
+            <a data-insta-link href="#">
+              <div class="card__media fabric--blouse"><span class="card__num">04</span><svg class="card__motif"><use href="#i-paisley"/></svg></div>
+              <div class="card__body">
+                <h3 class="card__title">Blouses</h3>
+                <p class="card__text">Designer necklines, sleeves and latkans, tailored to sit just right.</p>
+                <div class="card__tags"><span>Designer</span><span>Padded</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="card" data-cursor="View">
+            <a data-insta-link href="#">
+              <div class="card__media fabric--dupatta"><span class="card__num">05</span><svg class="card__motif"><use href="#i-paisley"/></svg></div>
+              <div class="card__body">
+                <h3 class="card__title">Dupattas</h3>
+                <p class="card__text">Embroidered and gota-patti dupattas to finish the look.</p>
+                <div class="card__tags"><span>Gota patti</span><span>Phulkari</span></div>
+              </div>
+            </a>
+          </article>
+          <article class="card" data-cursor="Ask">
+            <a href="contact.html">
+              <div class="card__media fabric--custom"><span class="card__num">06</span><svg class="card__motif"><use href="#i-paisley"/></svg></div>
+              <div class="card__body">
+                <h3 class="card__title"><em>Custom</em></h3>
+                <p class="card__text">Bring your own fabric or just an idea, and we'll design it together.</p>
+                <div class="card__tags"><span>Your fabric</span><span>Your design</span></div>
+              </div>
+            </a>
+          </article>
+          <div class="card card--end" data-cursor="Open">
+            <a data-insta-link href="#">
+              <svg><use href="#i-insta"/></svg>
+              <strong>See every piece on Instagram</strong>
+              <span data-insta-text>@frill_and_flair</span>
+            </a>
+          </div>
+        </div>
+        <div class="collection__progress"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="process">
+      <div class="process__intro">
+        <span class="eyebrow">How it's made</span>
+        <h2 class="display" data-split>From fabric <em>to flair</em></h2>
+        <p data-reveal>No two bodies and no two occasions are the same, so nothing here comes off a rack.</p>
+      </div>
+      <ol class="steps" data-stagger>
+        <li class="step"><span class="step__num">01</span><div><h3>Choose the fabric</h3><p>Pick from the boutique's fabrics or bring your own. We'll talk colour, drape and occasion.</p></div></li>
+        <li class="step"><span class="step__num">02</span><div><h3>Measure &amp; design</h3><p>Careful measurements and a design sketched around you: neckline, sleeves, borders, finishing.</p></div></li>
+        <li class="step"><span class="step__num">03</span><div><h3>Cut, stitch, embroider</h3><p>Every seam is stitched in-house. The embroidery, lace and tassels are added by hand.</p></div></li>
+        <li class="step"><span class="step__num">04</span><div><h3>Try, tweak, take home</h3><p>A fitting to get it perfect, then it's yours, ready for its first celebration.</p></div></li>
+      </ol>
+    </section>
+
+    <!-- ============ COMING NEXT ============ -->
+    <section class="next" id="next">
+      <div class="next__head">
+        <span class="eyebrow">On the loom</span>
+        <h2 class="display" data-split>Coming <em>Next</em></h2>
+        <p data-reveal>A sneak peek at what's being sketched, sourced and stitched right now. Follow along on Instagram to catch each drop first.</p>
+      </div>
+      <!-- ✏️ EDIT: update these with the real upcoming collections -->
+      <div class="next__grid" data-stagger>
+        <article class="teaser">
+          <span class="teaser__status">Stitching now</span>
+          <div class="teaser__art teaser__art--1"></div>
+          <h3>The Festive Edit</h3>
+          <p>Marigold, mirror work and bright silks for the festival season.</p>
+          <div class="teaser__when">Arriving soon</div>
+        </article>
+        <article class="teaser">
+          <span class="teaser__status">Sketching</span>
+          <div class="teaser__art teaser__art--2"></div>
+          <h3>Wedding Season</h3>
+          <p>Lehengas and heavy sarees for brides, sisters and everyone dancing at the sangeet.</p>
+          <div class="teaser__when">Winter</div>
+        </article>
+        <article class="teaser">
+          <span class="teaser__status">Sourcing fabric</span>
+          <div class="teaser__art teaser__art--3"></div>
+          <h3>Everyday Cottons</h3>
+          <p>Breathable, easy suits in soft pastels for work, college and everything in between.</p>
+          <div class="teaser__when">Spring</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ MEET HER ============ -->
+    <section class="meet">
+      <div class="portrait" data-reveal>
+        <!-- ✏️ Add her photo: <img src="images/mom.jpg" alt="Founder of Frill & Flair"> -->
+        <span class="portrait__mark">F&amp;F</span>
+      </div>
+      <div>
+        <span class="eyebrow">The hands behind it</span>
+        <h2 class="display" data-split>Made by <em>Mom,</em> with love</h2>
+        <p data-reveal>Frill &amp; Flair started at a sewing machine at home, with years of stitching for family and friends. Today it's a boutique, but every piece still gets the same care as the first one.</p>
+        <a href="about.html" class="btn btn--ghost magnetic" data-reveal>Read her story <svg><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta">
+      <canvas class="drape" data-layers="gold" data-autostart aria-hidden="true"></canvas>
+      <div class="cta__inner">
+        <span class="eyebrow">Your occasion, your outfit</span>
+        <h2 class="display" data-split>Let's make <em>something beautiful</em></h2>
+        <div class="cta__actions" data-reveal>
+          <a href="contact.html" class="btn btn--gold magnetic">Get in touch <svg><use href="#i-arrow"/></svg></a>
+          <a data-insta-link href="#" class="btn btn--light magnetic"><svg><use href="#i-insta"/></svg> Follow on Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <p class="footer__tag">Handcrafted Indian traditional wear, stitched with tradition and a little flair.</p>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#next">Coming Next</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Say hello</h4>
+        <ul>
+          <li><a data-email-link data-email-text href="#">email</a></li>
+          <li><a data-insta-link data-insta-text href="#">@frill_and_flair</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__big" aria-hidden="true">Frill <em>&amp;</em> Flair</div>
+    <div class="footer__bottom"><span>© <span data-year></span> Frill &amp; Flair Boutique</span><span>Stitched with love, coded with care</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/saree.js"></script>
+</body>
+</html>
